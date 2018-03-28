@@ -1,0 +1,32 @@
+CACHE MANIFEST
+# Created: 2018-03-28 17:47:29 UTC
+# Modifying this file is possible only when the Cache Manifest value in the application descriptor is set to "Managed by user"
+MenuTemplate.html
+Restaurants.html
+css/main.css
+filelist
+images/icon.png
+images/thumbnail.png
+js/Restaurants.js
+js/initOptions.js
+js/main.js
+js/messages.js
+worklight.manifest.bak
+worklight/messages/de/messages.json
+worklight/messages/es/messages.json
+worklight/messages/fr/messages.json
+worklight/messages/he/messages.json
+worklight/messages/it/messages.json
+worklight/messages/ja/messages.json
+worklight/messages/ko/messages.json
+worklight/messages/messages.json
+worklight/messages/pt-BR/messages.json
+worklight/messages/ru/messages.json
+worklight/messages/zh-TW/messages.json
+worklight/messages/zh/messages.json
+worklight/wljq.js
+worklight/worklight.css
+worklight/worklight.js
+
+NETWORK:
+*
