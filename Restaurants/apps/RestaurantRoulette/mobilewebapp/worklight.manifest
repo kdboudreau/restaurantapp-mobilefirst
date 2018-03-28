@@ -1,8 +1,8 @@
 CACHE MANIFEST
-# Created: 2018-03-28 17:47:29 UTC
+# Created: 2018-03-28 19:03:14 UTC
 # Modifying this file is possible only when the Cache Manifest value in the application descriptor is set to "Managed by user"
 MenuTemplate.html
-Restaurants.html
+RestaurantRoulette.html
 css/main.css
 filelist
 images/icon.png

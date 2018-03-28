@@ -6,19 +6,19 @@
              disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->
 
 <!-- Attribute "id" must be identical to application folder name -->
-<application id="Restaurants" platformVersion="7.1.0.00.20180302-0530"
+<application id="RestaurantRoulette" platformVersion="7.1.0.00.20180302-0530"
 	xmlns="http://www.worklight.com/application-descriptor" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-	<displayName>Restaurants</displayName>
-	<description>Restaurants</description>
+	<displayName>RestaurantRoulette</displayName>
+	<description>RestaurantRoulette</description>
 	<author>
 		<name>application's author</name>
 		<email>application author's e-mail</email>
 		<copyright>Copyright My Company</copyright>
 		<homepage>http://mycompany.com</homepage>
 	</author>
-	<mainFile>Restaurants.html</mainFile>
+	<mainFile>RestaurantRoulette.html</mainFile>
 	<thumbnailImage>common/images/thumbnail.png</thumbnailImage>
 	<accessTokenExpiration>3600</accessTokenExpiration>
 	<userIdentityRealms></userIdentityRealms>
@@ -36,6 +36,6 @@
      -->
 <!--      I commented out below -->
 <!--     <targetCategory>UNDEFINED</targetCategory> -->
-    <mobileWebApp cacheManifest="no-use" securityTest="wasWebSecurity"/>
+    <mobileWebApp cacheManifest="no-use" />
     
 </application>
