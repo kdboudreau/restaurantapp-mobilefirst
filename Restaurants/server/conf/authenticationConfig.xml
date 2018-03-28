@@ -26,6 +26,10 @@
 		 on application authenticity for environment specific guidelines. -->   
          
 	 <securityTests>
+<!-- 	 	<webSecurityTest name="wasWebSecurity"> -->
+<!-- 			<testUser realm="WASLTPARealm"/> -->
+<!-- 		</webSecurityTest> -->
+       	
        	<!-- 
 		<mobileSecurityTest name="mobileTests">
 			<testAppAuthenticity/> 
@@ -33,10 +37,6 @@
 			<testUser realm="myMobileLoginForm" />
 			<testDirectUpdate mode="perSession" />
 		</mobileSecurityTest>
-
-		<webSecurityTest name="webTests">
-			<testUser realm="myWebLoginForm"/>
-		</webSecurityTest>
 
 		<customSecurityTest name="customTests">
         	<test realm="wl_antiXSRFRealm" step="1"/>
@@ -67,6 +67,9 @@
 			<className>com.worklight.core.auth.ext.HeaderAuthenticator</className>			
 		</realm>
 		
+<!-- 		<realm loginModule="HeaderLoginModule" name="WASLTPARealm"> -->
+<!--       		<className>com.worklight.core.auth.ext.HeaderAuthenticator</className> -->
+<!--     	</realm> -->
 		<!-- For client logger -->
 		<!-- <realm name="LogUploadServlet" loginModule="StrongDummy">
 			<className>com.worklight.core.auth.ext.HeaderAuthenticator</className>
@@ -120,6 +123,12 @@
 		<loginModule name="rejectAll" expirationInSeconds="3600">
 			<className>com.worklight.core.auth.ext.RejectingLoginModule</className>
 		</loginModule>
+		
+<!-- 		<loginModule name="HeaderLoginModule" expirationInSeconds="3600"> -->
+<!-- 			<className>com.worklight.core.auth.ext.HeaderLoginModule</className> -->
+<!-- 			<parameter name="user-name-header" value="iv-user"/> -->
+<!-- 			<parameter name="displa-name-header" value="iv-user"/> -->
+<!-- 		</loginModule> -->
 		
 		<!-- Required for Trusteer - wl_basicTrusteerFraudDetectionRealm -->		
 		<!-- loginModule name="trusteerFraudDetectionLogin" expirationInSeconds="300">
