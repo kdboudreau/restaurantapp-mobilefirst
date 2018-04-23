@@ -10,7 +10,26 @@ function wlCommonInit(){
 	 *    });
 	 *     
 	 */
-	
+	console.log("in wlCommonInit");
 	// Common initialization code goes here
+	clientConnect();
+	console.log("after wlCommonInit");
 	
+}
+
+function clientConnect() {
+	console.log("in clientConnect");
+	WL.Client.connect({
+		onSuccess: onConnectSuccess,
+		onFailure: onConnectFailure
+	});
+	console.log("after clientConnect");
+}
+
+function onConnectSuccess() {
+	console.log('Connect Success');
+}
+
+function onConnectFailure() {
+	WL.Logger.debug('Connect Failure');
 }

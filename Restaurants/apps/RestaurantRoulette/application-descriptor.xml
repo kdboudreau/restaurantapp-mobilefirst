@@ -18,7 +18,7 @@
 		<copyright>Copyright My Company</copyright>
 		<homepage>http://mycompany.com</homepage>
 	</author>
-	<mainFile>RestaurantRoulette.html</mainFile>
+	<mainFile>index.html</mainFile>
 	<thumbnailImage>common/images/thumbnail.png</thumbnailImage>
 	<accessTokenExpiration>3600</accessTokenExpiration>
 	<userIdentityRealms></userIdentityRealms>

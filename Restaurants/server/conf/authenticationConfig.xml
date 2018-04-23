@@ -5,18 +5,7 @@
 			 5725-I43 (C) Copyright IBM Corp. 2006, 2013. All Rights Reserved.
 			 US Government Users Restricted Rights - Use, duplication or
              disclosure restricted by GSA ADP Schedule Contract with IBM Corp. -->	
-
-	 <staticResources>
-	 <!--  
-	   		<resource id="logUploadServlet" securityTest="LogUploadServlet">
-			<urlPatterns>/apps/services/loguploader*</urlPatterns>
-		</resource>
-		-->
-		<resource id="subscribeServlet" securityTest="SubscribeServlet">
-			<urlPatterns>/subscribeSMS*;/receiveSMS*;/ussd*</urlPatterns>
-		</resource>
-		
-	</staticResources> 
+ 
 
    <!--  Sample security tests  
          Even if not used there will be some default webSecurityTest and mobileSecurityTest 
@@ -52,9 +41,9 @@
   	        <test realm="LogUploadServlet" isInternalUserID="true"/>
        	</customSecurityTest>
        	-->
-       	<customSecurityTest name="SubscribeServlet">
-       		<test realm="SubscribeServlet" isInternalUserID="true"/>
-       	</customSecurityTest>    		
+<!--        	<customSecurityTest name="SubscribeServlet"> -->
+<!--        		<test realm="SubscribeServlet" isInternalUserID="true"/> -->
+<!--        	</customSecurityTest>    		 -->
 
 	</securityTests> 
 	
@@ -63,9 +52,6 @@
 			<className>com.worklight.core.auth.ext.FormBasedAuthenticator</className>
 		</realm>
 		
-		<realm name="SubscribeServlet" loginModule="rejectAll">
-			<className>com.worklight.core.auth.ext.HeaderAuthenticator</className>			
-		</realm>
 		
 <!-- 		<realm loginModule="HeaderLoginModule" name="WASLTPARealm"> -->
 <!--       		<className>com.worklight.core.auth.ext.HeaderAuthenticator</className> -->
@@ -116,9 +102,9 @@
 			<className>com.worklight.core.auth.ext.NonValidatingLoginModule</className>
 		</loginModule>
 		
-		<loginModule name="requireLogin" expirationInSeconds="3600">
-			<className>com.worklight.core.auth.ext.SingleIdentityLoginModule</className>
-		</loginModule>
+<!-- 		<loginModule name="requireLogin" expirationInSeconds="3600"> -->
+<!-- 			<className>com.worklight.core.auth.ext.SingleIdentityLoginModule</className> -->
+<!-- 		</loginModule> -->
 		
 		<loginModule name="rejectAll" expirationInSeconds="3600">
 			<className>com.worklight.core.auth.ext.RejectingLoginModule</className>

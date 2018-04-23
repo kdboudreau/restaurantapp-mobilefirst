@@ -9,7 +9,7 @@
 	
 	// ## Environment
 	app.env.isPortrait = window.matchMedia('(orientation: portrait)').matches;
-	app.env.loader = '<div class="loader_wrapper"></div>';
+	app.env.loader = '<div class="loader-wrapper"><img src="RRLoader.png"></div>';
 	
 	app.data = {
 		firstvariable : 0,
@@ -17,5 +17,4 @@
 	};
 
 }());
-
 
