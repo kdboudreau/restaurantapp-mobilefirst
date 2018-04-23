@@ -30,15 +30,15 @@ function toggleMenu(menu,icon){
 }
 
 $(document).on("click", function(e){
-	var container = $(".page-menu"),
-		menuButton = $(".panel-A"),
+	var menuContainer = $(".page-menu"),
+		menuButton = $(".menu-button"),
 		view = $(document);
-	if (container.length) {
-		if ((!container.is(e.target) && !menuButton.is(e.target) && 
-				menuButton.has(e.target).length === 0) || e.target.id == 'csxLogOutButton') {
-			if (container.is(":visible")) {
+	if (menuContainer.length) {
+		if ((!menuContainer.is(e.target) && !menuButton.is(e.target) && 
+				menuButton.has(e.target).length === 0)) {
+			if (menuContainer.is(":visible")) {
 				view.find('.page-menu').slideUp();
-				view.find('.panel-A').removeClass('highlighted');
+				view.find('.menu-button').removeClass('highlighted');
 			}
 		}
 	}
