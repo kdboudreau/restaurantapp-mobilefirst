@@ -1,4 +1,14 @@
-function resizeMenu() {
+function toggleAppMenu(menu,icon){
+	initializeAppMenu();
+	setTimeout(function() {
+		menu.slideToggle();
+		icon.find("img").toggleClass('highlighted');
+	}, 0);
+}
+
+var initializeAppMenu = _.once(resizeAppMenu);
+
+function resizeAppMenu() {
 	var h=$(window).height(),
 		w=$(window).width(),
 		activeMenuHeight=$.mobile.activePage.find('.page-menu').height(),
@@ -20,15 +30,6 @@ function resizeMenu() {
 			
 }
 
-var initialize = _.once(resizeMenu);
-function toggleMenu(menu,icon){
-	initialize();
-	setTimeout(function() {
-		menu.slideToggle();
-		icon.find("img").toggleClass('highlighted');
-	}, 0);
-}
-
 $(document).on("click", function(e){
 	var menuContainer = $(".page-menu"),
 		menuButton = $(".menu-button"),
@@ -38,7 +39,7 @@ $(document).on("click", function(e){
 				menuButton.has(e.target).length === 0)) {
 			if (menuContainer.is(":visible")) {
 				view.find('.page-menu').slideUp();
-				view.find('.menu-button').removeClass('highlighted');
+				view.find('.menu-button').find("img").removeClass('highlighted');
 			}
 		}
 	}

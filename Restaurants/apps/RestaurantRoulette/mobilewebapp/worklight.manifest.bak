@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Created: 2018-04-06 20:14:46 UTC
+# Created: 2018-04-23 20:32:01 UTC
 # Modifying this file is possible only when the Cache Manifest value in the application descriptor is set to "Managed by user"
 AddRestaurants.html
 RestaurantRoulette.html
@@ -21,7 +21,6 @@ js/messages.js
 js/util/jquery-1.11.1.min.js
 js/util/jquery.mobile-1.4.5.min.js
 js/util/underscore-min.js
-menuTemplate.html
 worklight.manifest.bak
 worklight/messages/de/messages.json
 worklight/messages/es/messages.json

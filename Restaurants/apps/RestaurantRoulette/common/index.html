@@ -23,7 +23,7 @@
 			</div>
 			<div style="width: 50%; float: left;" class="screen-title"><%= menu.title %></div>
 			<div style="width: 25%; float: left;" align="right">
-				<a class="menu-button" href="#<%= menu.id %>" onclick="toggleMenu($('#<%= menu.id %>'),$(this));">
+				<a class="menu-button" href="#<%= menu.id %>" onclick="toggleAppMenu($('#<%= menu.id %>'),$(this));">
 					<img class="icon" src="images/RRMenu.png">
 				</a>
 			</div>
@@ -41,9 +41,6 @@
 						</a>
 					</li> 
 				<% }); %>
-				<li data-icon="false" class="drawer-option-enabled">
-					<a id="csxLogOutButton">Log Out</a>
-				</li>
 			</ul>
 		</div>
 	</script>
